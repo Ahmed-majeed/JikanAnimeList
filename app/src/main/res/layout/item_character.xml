@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" android:id="@+id/charCardView">
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:contentDescription="@string/char_image"
+                android:layout_width="128dp"
+                android:layout_height="192dp" app:srcCompat="@drawable/test" android:id="@+id/charImageView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+        <TextView
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:background="#7F000000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:id="@+id/charTextView" app:layout_constraintEnd_toEndOf="@+id/charImageView"
+                app:layout_constraintStart_toStartOf="@+id/charImageView"
+                app:layout_constraintBottom_toBottomOf="@+id/charImageView" android:layout_marginBottom="16dp"
+                app:layout_constraintHorizontal_bias="0.497" tools:text="char name view"
+                android:textAlignment="center"/>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
